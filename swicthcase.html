@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swicth Case</title>
+</head>
+<body>
+    <script>
+        const nilai = "B";
+
+        switch (nilai){
+            case "A":
+                console.info("Anda Lulus dengan Nilai terbaik");
+                break;
+            case "B":
+            case "C":
+                console.info("Anda Lulus");
+                break;
+            case "D":
+                console.info("Anda Tidak Lulus");
+                break;
+                default:
+                    console.info("anda salah jurusan");         
+        }
+        if(nilai === "A"){
+            console.info("Anda Lulus dengan Nilai terbaik");
+        }else if(nilai === "B" || nilai === "C"){
+            console.info("Anda Lulus");
+        }else if(nilai === "D"  ){
+            console.info("Anda Tidak Lulus");
+        }else{
+            console.info("anda salah jurusan");  
+        }
+    </script>
+</body>
+</html>
